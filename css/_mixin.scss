@@ -9,3 +9,15 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin Button () {
+    padding: 12px 20px;
+    color: white;
+    font-weight: 500;
+    border-radius: 25px;
+    background-image: linear-gradient(#9356DC,#FF79DA  );
+    box-shadow: 6px 6px 6px #dfdfdf ;
+    font-size: 14px;
+    margin:0;
+    margin-bottom: 40px;
+}

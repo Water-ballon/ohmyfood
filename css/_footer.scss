@@ -1,0 +1,21 @@
+@import "./mixin";  
+
+.footer_inner{
+    padding: 10px 20px;
+}
+footer{
+    background-color:rgb(53,53,53);
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    img{
+        fill: white;
+    }
+    .footer_column_block{
+        @include Flex (row);
+        align-items: center;
+        i{
+            width: 8%;
+        }
+    }
+}

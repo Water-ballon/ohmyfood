@@ -3,8 +3,10 @@
 .logo {
     @include FlexCenter(row);
     height: 65px;
-    border: 4px white solid;
-    box-shadow: 0px 6px 6px black;
-    
-    
+}
+.header_inner{
+    box-shadow: 0px -10px 20px black;;
+}
+header{
+    position:relative;
 }
