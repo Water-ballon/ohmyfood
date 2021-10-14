@@ -321,4 +321,17 @@ footer .footer_column_block {
 footer .footer_column_block i {
   width: 8%;
 }
+
+.restaurant_img img {
+  height: 220px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.restaurant_menu {
+  border-radius: 0 20px 20px 0;
+  position: relative;
+}
 /*# sourceMappingURL=style.css.map */
