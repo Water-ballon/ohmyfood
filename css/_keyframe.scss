@@ -1,0 +1,35 @@
+@keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -1;
+      
+    }
+  } 
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes blockAppear{
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
