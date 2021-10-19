@@ -56,11 +56,6 @@
   border-radius: 4px;
 }
 
-.restaurants .restaurants_block .block:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-}
-
 .restaurants .restaurants_block .block .restaurants_link_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,11 +162,6 @@
   margin-bottom: 40px;
 }
 
-.menu_title a:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-}
-
 .restaurants_img {
   max-height: 175px;
   width: 100%;
@@ -263,6 +253,32 @@ ul {
   margin-top: 25px;
 }
 
+.restaurant_heart {
+  position: relative;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.restaurant_heart_filed {
+  position: absolute;
+  font-size: 25px;
+  top: 201px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.restaurant_heart_filed:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.restaurant_heart_filed .fa-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,8 +305,15 @@ header {
   position: relative;
 }
 
+header .return {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-size: 18px;
+}
+
 .footer_inner {
-  padding: 10px 20px;
+  padding-bottom: 35px;
   max-width: 300px;
 }
 
@@ -301,8 +324,22 @@ footer {
   font-weight: 400;
 }
 
+footer ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+footer ul li {
+  padding-top: 5px;
+}
+
 footer img {
-  fill: white;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 105px;
+  height: 15px;
+  padding-top: 25px;
+  padding-left: 15px;
 }
 
 footer .footer_column_block {
@@ -332,6 +369,125 @@ footer .footer_column_block i {
 
 .restaurant_menu {
   border-radius: 0 20px 20px 0;
+  background-color: #f6f6f6;
+}
+
+.restaurant_menu .restaurant_menu_main {
+  padding: 0 20px 0 20px;
+}
+
+.restaurant_menu .restaurant_menu_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restaurant_menu .restaurant_menu_button a {
+  padding: 12px 20px;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-box-shadow: 6px 6px 6px #dfdfdf;
+          box-shadow: 6px 6px 6px #dfdfdf;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-bottom: 60px;
+}
+
+.restaurant_menu .restaurant_menu_title {
   position: relative;
+  top: -35px;
+  padding: 40px 0px 0px 20px;
+  border-radius: 25px 25px 0 0;
+  background-color: #f6f6f6;
+}
+
+.restaurant_menu .restaurant_menu_title h1 {
+  margin: 0;
+  font-family: 'Shrikhand', cursive;
+}
+
+.restaurant_menu .restaurant_menu_title .restaurant_heart {
+  position: absolute;
+  right: 8%;
+  font-size: 25px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.restaurant_menu .restaurant_menu_title .restaurant_heart_filed {
+  position: absolute;
+  right: 8%;
+  font-size: 25px;
+  top: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.restaurant_menu .restaurant_menu_title .restaurant_heart_filed:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.restaurant_menu .restaurant_menu_title .restaurant_heart_filed .fa-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_main_title_underline {
+  margin: 8px 0 0 0;
+  border-top: 3px solid #99e2d0;
+  width: 40px;
+}
+
+.menu_main_block {
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 6px #e8e8e8;
+          box-shadow: 6px 6px 6px #e8e8e8;
+  padding: 15px 20px 15px 10px;
+  height: 40px;
+  margin: 15px 0 15px 0;
+}
+
+.menu_main_block .block--title h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.menu_main_block .block--subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_main_block .block--subtitle .price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu_main_block .block--subtitle .txt {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu_main {
+  margin-bottom: 35px;
 }
 /*# sourceMappingURL=style.css.map */

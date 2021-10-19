@@ -29,9 +29,6 @@
                 font-size: 14px;
                 border-radius: 4px;
             }
-            &:hover {
-                transform:scale(1.03);
-            }
             .restaurants_link_block{
                 @include Flex(row);
                 height: 75px;
@@ -87,9 +84,6 @@
     }
     a{
         @include Button();
-        &:hover{
-            transform: scale(1.03);
-        }
 
     }
 }
@@ -151,5 +145,28 @@ ul{
                 margin-top: 25px;
             }
         }
+    }
+}
+
+.restaurant_heart{
+    position: relative;
+
+    font-size: 25px;
+    
+    cursor: pointer;
+}
+.restaurant_heart_filed{
+    position: absolute;
+
+    font-size: 25px;
+    top: 201px;
+    cursor: pointer;
+    opacity: 0;
+    &:hover{
+        opacity: 1;
+        transition:opacity 0.6s;
+    }
+    .fa-gradient{
+        @include Heart
     }
 }

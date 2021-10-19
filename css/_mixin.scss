@@ -21,3 +21,10 @@
     margin:0;
     margin-bottom: 40px;
 }
+
+@mixin Heart {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}

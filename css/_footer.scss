@@ -1,7 +1,7 @@
 @import "./mixin";  
 
 .footer_inner{
-    padding: 10px 20px;
+    padding-bottom: 35px;
     max-width: 300px;
 }
 footer{
@@ -9,8 +9,19 @@ footer{
     color: white;
     font-size: 15px;
     font-weight: 400;
+    ul{
+        padding-left: 25px;
+        margin: 0;
+        li{
+            padding-top: 5px;
+        }
+    }
     img{
-        fill: white;
+        filter:invert(100%);
+        width: 105px;
+        height: 15px;
+        padding-top: 25px;
+        padding-left: 15px
     }
     .footer_column_block{
         @include Flex (row);
