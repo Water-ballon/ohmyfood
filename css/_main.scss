@@ -12,7 +12,7 @@
             @include Flex(column);
             width: 100%;
             box-shadow: 6px 6px 6px #dfdfdf;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             border-radius: 20px;
             background-color: white;
             .restaurants_link{
@@ -125,14 +125,14 @@ ul{
                 border-radius: 20px;
                 height: 25px;
                 width: 25px;
-                position: absolute;
+                position: relative;
                 color: white;
-                left:20px;
+                left:-10px;
                 font-size: 16px;
                 font-weight: 500;
             }
             i{
-                padding-left: 30px;
+                padding-left: 10px;
                 padding-right: 15px;
                 color: gray;
                 font-size: 18px;
