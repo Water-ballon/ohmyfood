@@ -481,11 +481,23 @@ footer .footer_column_block i {
       -ms-flex: 1;
           flex: 1;
   padding-left: 5px;
+  overflow: hidden;
 }
 
 .menu_main_block .block--title h2 {
   margin: 0;
   font-size: 16px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu_main_block .block--title .txt {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu_main_block .block--subtitle {
@@ -787,6 +799,10 @@ footer .footer_column_block i {
   }
   .restaurants .restaurants_block .block {
     width: 48%;
+  }
+  .restaurant_menu {
+    max-width: 1000px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
