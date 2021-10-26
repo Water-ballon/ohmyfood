@@ -61,7 +61,7 @@
 
 .menu_main_block{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 6px 6px 6px rgb(232,232,232);
     padding: 15px 20px 15px 10px;
     height: 40px;
@@ -70,6 +70,7 @@
     overflow: hidden;
     .block--title{
         flex:1;
+        padding-left: 10px;
         h2{
             margin: 0;
             font-size: 16px;
@@ -98,7 +99,8 @@
     text-transform: uppercase;
     position: relative;
     padding-bottom: 10px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight:300;
     &::after{
         content: "";
         width: 40px;
