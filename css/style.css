@@ -689,6 +689,15 @@ footer .footer_column_block i {
           animation-delay: 0.2s;
 }
 
+.menu_main_block:hover .block_icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu_main_block:hover .block--animation {
+  margin-right: -20px;
+}
+
 .block_icon {
   height: 1.6rem;
   width: 1.6rem;
@@ -711,8 +720,8 @@ footer .footer_column_block i {
 
 .block--animation {
   background-color: #99e2d0;
-  margin: -1rem -6rem -1rem 1rem;
-  width: 4rem;
+  margin: -16px -88px -16px 16px;
+  width: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,7 +735,7 @@ footer .footer_column_block i {
           transition-duration: .5s;
 }
 
-.block--animation:hover .menu_main_block {
-  margin-right: -6rem;
+.ok_icon {
+  color: #99e2d0;
 }
 /*# sourceMappingURL=style.css.map */

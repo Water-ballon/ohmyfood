@@ -45,12 +45,19 @@
     animation: blockAppear 1.5s;
     cursor: pointer;
     animation-iteration-count: 1;
-        &--1{
-            animation-delay: 0.1s;
-        }
-        &--2{
-            animation-delay: 0.2s;
-        }
+    &--1{
+        animation-delay: 0.1s;
+    }
+    &--2{
+         animation-delay: 0.2s;
+    }
+    &:hover .block_icon{
+        transform: rotate(0deg)
+    }
+    &:hover .block--animation{
+        margin-right: -20px;
+    }    
+    
 }
 
 .block_icon {
@@ -66,14 +73,17 @@
 }
 .block--animation {
     background-color: #99e2d0;
-    margin: -1rem -6rem -1rem 1rem;
-    width: 4rem;
+    margin: -16px -88px -16px 16px;
+    width: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition-duration: .5s;
-    &:hover .menu_main_block{
-        margin-right: -6rem;
-    }
+    
 }
 
+
+
+.ok_icon{
+    color: #99e2d0;
+}
