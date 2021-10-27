@@ -1,7 +1,8 @@
 @import "./mixin";
 
-.restaurant_img img{
-    height: 220px;
+.restaurant_img {
+    min-height: 220px;
+    max-height: 320px;
     width:100%;
     object-fit: cover;
     position: relative;

@@ -369,8 +369,9 @@ footer .footer_column_block i {
   width: 8%;
 }
 
-.restaurant_img img {
-  height: 220px;
+.restaurant_img {
+  min-height: 220px;
+  max-height: 320px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -801,7 +802,7 @@ footer .footer_column_block i {
     width: 48%;
   }
   .restaurant_menu {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
   }
 }
