@@ -806,4 +806,13 @@ footer .footer_column_block i {
     margin: auto;
   }
 }
+
+@media screen and (max-width: 351px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .logo img {
+    height: 24px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
